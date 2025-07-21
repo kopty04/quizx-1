@@ -17,7 +17,7 @@ function updateTimer() {
 // Fetch questions from MongoDB
 async function fetchQuestions() {
   try {
-    const response = await fetch('http://localhost:3000/api/questions');
+    const response = await fetch('https://quizx-1doz.onrender.com/api/questions');
     questions = await response.json();
     console.log('Questions loaded:', questions);
     showQuestion();
